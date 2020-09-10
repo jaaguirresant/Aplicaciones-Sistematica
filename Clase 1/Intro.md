@@ -1,8 +1,6 @@
-# Abrir R Studio
+## Taller 1. Lectura de datos y manipulación de árboles filogenéticos
 
-# Copiar este script completo en la pantalla de la izquierda-arriba en R Studio
 
-# Seguir la siguiente explicación:
 
 # 1. Limpiar la memoria antes de comenzar
 rm(list=ls())
