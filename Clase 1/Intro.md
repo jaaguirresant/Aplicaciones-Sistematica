@@ -1,4 +1,4 @@
-# Taller 1. Lectura de datos y manipulación de árboles filogenéticos
+# Lectura de datos y manipulación de árboles filogenéticos en R
 
 _[Volver a inicio](/README.md)_
 
