@@ -7,11 +7,11 @@ rm(list=ls())
 
 ### 2. Ubicarse en el respectivo directorio de trabajo. Usar el menú de R Studio o usar el siguiente comando:
 
-``
+`
 setwd("/Users/home/Intro_R/")
 getwd() # Esta función permite ver si estamos en la carpeta correcta
 list.files() # Este comando permite ver que archivos hay en la carpeta.
-``
+`
 
 # 3. Instalar y abrir los paquetes. Los paquetes son los programas escritos para que R haga operaciones complejas. Hay miles de programas. Para comenzar, usaremos el paquete "stats" para hacer operaciones estadísticas:
 
