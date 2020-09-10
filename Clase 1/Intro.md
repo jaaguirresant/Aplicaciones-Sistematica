@@ -3,41 +3,49 @@
 ## Nociones básicas de R
 
 ### 1. Limpiar la memoria antes de comenzar
-rm(list=ls())
 
+```
+rm(list=ls())
+```
 ### 2. Ubicarse en el respectivo directorio de trabajo. Usar el menú de R Studio o usar el siguiente comando:
 
-`
+```
 setwd("/Users/home/Intro_R/")
 getwd() # Esta función permite ver si estamos en la carpeta correcta
 list.files() # Este comando permite ver que archivos hay en la carpeta.
-`
+```
 
-# 3. Instalar y abrir los paquetes. Los paquetes son los programas escritos para que R haga operaciones complejas. Hay miles de programas. Para comenzar, usaremos el paquete "stats" para hacer operaciones estadísticas:
+### 3. Instalar y abrir los paquetes. Los paquetes son los programas escritos para que R haga operaciones complejas. Hay miles de programas. Para comenzar, usaremos el paquete "stats" para hacer operaciones estadísticas:
 
+```
 install.packages("stats") # este comando descarga el programa desde internet
 library(stats) # este comando abre el programa.
+```
+### 4. R hace operaciones matemáticas sin problema:
 
-# 4. R hace operaciones matemáticas sin problema:
-
+```
 2+2
 3*4
 15/3
 ((3+4)*5)/5
 2^3
 5 > 3
+```
 
-# 5. Las variables se pueden guardar como objetos, usando los símbolos "<-" o "->" "=":
+### 5. Las variables se pueden guardar como objetos, usando los símbolos "<-" o "->" "=":
 
+```
 x <- 2+2
 y <- 3*4
 z = ((3+4)*5)/5
 M <- (x*y)^z
 
 ls() # Este comando permite ver que objetos hay guardados en memoria.
+```
 
-# 6. Vectores. Un vector es la estructura de datos más sencilla en R. Un vector es una colección de uno o más datos del mismo tipo.
+### 6. Vectores. Un vector es la estructura de datos más sencilla en R. Un vector es una colección de uno o más datos del mismo tipo.
 
+```
 3
 is.vector(3)
 length(3)
@@ -71,18 +79,26 @@ mi_vector * 2
 mi_vector > 7
 mi_vector < 7
 mi_vector == 7
+```
 
-# 7. Las funciones nos premiten hacer operaciones más complejas:
+### 7. Las funciones nos premiten hacer operaciones más complejas:
+
+```
 mean(medidas) -> promedio
 sd(medidas) -> desviacion_estandar
+```
 
-# 8. Cuando no entendemos que hace una función o que variables debemos usar para que funcione, podemos usar la ayuda con "?" y "help()":
+### 8. Cuando no entendemos que hace una función o que variables debemos usar para que funcione, podemos usar la ayuda con "?" y "help()":
+
+```
 ?mean
 help("mean")
 help(package = "stats") # o podemos ver toda la documentcaión de un paquete
+```
 
-# 9. Matrices (función "matrix")
+### 9. Matrices (función "matrix")
 
+```
 # Creemos un vector numérico del uno al doce
 1:12
 
@@ -108,8 +124,9 @@ dim(mi_vector) # la función dim no funciona si no hay más de una fila
 
 mi_matriz + 1
 mi_matriz * 2
+```
 
-# 10. Data frames (tablas compuestas). Los data frames son estructuras de datos de dos dimensiones (rectangulares) que pueden contener datos de diferentes tipos, por lo tanto, son heterogéneas.
+### 10. Data frames (tablas compuestas). Los data frames son estructuras de datos de dos dimensiones (rectangulares) que pueden contener datos de diferentes tipos, por lo tanto, son heterogéneas.
 
 mi_df <- data.frame(
   "entero" = 1:4, 
